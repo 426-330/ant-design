@@ -45,9 +45,7 @@
 @component-background: #fff;
 // Popover background color
 @popover-background: @component-background;
-@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  'Noto Color Emoji';
+@font-family: "PingFangSC-Light,Helvetica Neue,Helvetica,Microsoft Yahei,Arial,Hiragino Sans GB,tahoma,SimSun,sans-serif";
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 @text-color: fade(@black, 65%);
 @text-color-secondary: fade(@black, 45%);
@@ -70,7 +68,7 @@
 @heading-4-size: ceil(@font-size-base * 1.42);
 // https://github.com/ant-design/ant-design/issues/20210
 @line-height-base: 1.5715;
-@border-radius-base: 2px;
+@border-radius-base: 4px;
 @border-radius-sm: @border-radius-base;
 
 // vertical paddings
@@ -115,7 +113,7 @@
 @ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Border color
-@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-base: #e4eaf1; //hsv(0, 0, 85%); // base border outline a component
 @border-color-split: hsv(0, 0, 94%); // split border inside a component
 @border-color-inverse: @white;
 @border-width-base: 1px; // width of the border for a component
@@ -155,9 +153,9 @@
 @btn-border-radius-sm: @border-radius-base;
 @btn-border-width: @border-width-base;
 @btn-border-style: @border-style-base;
-@btn-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
-@btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-@btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+@btn-shadow: none; //0 2px 0 rgba(0, 0, 0, 0.015);
+@btn-primary-shadow: none; //0 2px 0 rgba(0, 0, 0, 0.045);
+@btn-text-shadow: none; //0 -1px 0 rgba(0, 0, 0, 0.12);
 
 @btn-primary-color: #fff;
 @btn-primary-bg: @primary-color;
@@ -350,18 +348,18 @@
 @input-padding-vertical-lg: ceil((@input-height-lg - @font-size-lg * @line-height-base) / 2 * 10) /
   10 - @border-width-base;
 @input-placeholder-color: hsv(0, 0, 75%);
-@input-color: @text-color;
+@input-color: #4c6072;
 @input-icon-color: @input-color;
-@input-border-color: @border-color-base;
+@input-border-color: #e4eaf1;
 @input-bg: @component-background;
 @input-number-hover-border-color: @input-hover-border-color;
 @input-number-handler-active-bg: #f4f4f4;
-@input-number-handler-hover-bg: @primary-5;
+@input-number-handler-hover-bg: @primary-6;
 @input-number-handler-bg: @component-background;
 @input-number-handler-border-color: @border-color-base;
 @input-addon-bg: @background-color-light;
-@input-hover-border-color: @primary-5;
-@input-disabled-bg: @disabled-bg;
+@input-hover-border-color: @primary-6;
+@input-disabled-bg: #ecf3f8;
 @input-outline-offset: 0 0;
 @input-icon-hover-color: fade(@black, 85%);
 

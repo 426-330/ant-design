@@ -42,7 +42,7 @@
     }
     & when not (@theme = dark) {
       .button-color(
-        @color; ~`colorPalette('@{background}', 5) `; ~`colorPalette('@{background}', 5) `
+        @color; lighten(@background, 20%); lighten(@background, 20%)
       );
     }
   }
@@ -56,7 +56,7 @@
     }
     & when not (@theme = dark) {
       .button-color(
-        @color; ~`colorPalette('@{background}', 7) `; ~`colorPalette('@{background}', 7) `
+        darken(@color; 5%); darken(@background, 5%); darken(@background, 5%)
       );
     }
   }
